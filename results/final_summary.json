@@ -3,7 +3,7 @@
   "dataset": "CICIDS2017",
   "model": "XGBoost Binary Classifier",
   "explainability": "SHAP TreeExplainer",
-  "timestamp": "2025-11-01 22:36:02",
+  "timestamp": "2025-11-08 19:53:05",
   "data_summary": {
     "train_samples": 2262300,
     "test_samples": 565576,
@@ -11,26 +11,26 @@
     "classes": 2
   },
   "model_performance": {
-    "accuracy": 0.9950068602628117,
-    "precision_attack": 0.9804859468700451,
-    "recall_attack": 0.9944210365552372,
-    "f1_attack": 0.9874043282011026,
-    "roc_auc": 0.9997369776888215,
-    "false_positive_rate": 0.004849592198386404,
-    "training_time_seconds": 27.613969564437866
+    "accuracy": 0.9966512016068574,
+    "precision_attack": 0.986094698214968,
+    "recall_attack": 0.9970443172732255,
+    "f1_attack": 0.9915392793645972,
+    "roc_auc": 0.9998877966256446,
+    "false_positive_rate": 0.0034451256425214356,
+    "training_time_seconds": 34.131776332855225
   },
   "shap_analysis": {
     "samples_explained": 1000,
-    "computation_time_seconds": 0.805138349533081,
-    "time_per_sample_ms": 0.805138349533081,
+    "computation_time_seconds": 0.7259218692779541,
+    "time_per_sample_ms": 0.7259218692779541,
     "top_feature": "Bwd Packet Length Min",
-    "top_feature_importance_pct": 27.699989318847656,
+    "top_feature_importance_pct": 16.275320053100586,
     "bias_detected": false
   },
   "operational_metrics": {
     "manual_triage_time_sec": 300,
-    "automated_triage_time_sec": 30.00305609703064,
-    "time_reduction_pct": 89.99898130098978,
+    "automated_triage_time_sec": 30.00994117259979,
+    "time_reduction_pct": 89.99668627580007,
     "target_achieved_90pct": false
   },
   "targets_achievement": {

@@ -3,13 +3,13 @@
 AUTOMATED TIER 1 TRIAGE REPORT - X-IDS
 ================================================================================
 Alert ID: DEMO-BENIGN-001
-Timestamp: 2025-11-01 22:34:15
+Timestamp: 2025-11-08 19:52:48
 ================================================================================
 
 PREDICTION:
    Classification: ✅ BENIGN TRAFFIC
-   Risk Score: 0.01%
-   Confidence: 99.99%
+   Risk Score: 0.00%
+   Confidence: 100.00%
    Ground Truth: BENIGN ✅
 
 ================================================================================
@@ -17,28 +17,28 @@ TOP CONTRIBUTING FACTORS (SHAP Analysis):
 
    1. Bwd Packet Length Min
       Feature Value: 174.0000
-      SHAP Impact: -5.8875
-      Effect: ↓ DECREASES attack likelihood by 5.8875
+      SHAP Impact: -5.0610
+      Effect: ↓ DECREASES attack likelihood by 5.0610
 
-   2. Average Packet Size
-      Feature Value: 96.3333
-      SHAP Impact: -0.6891
-      Effect: ↓ DECREASES attack likelihood by 0.6891
-
-   3. Bwd Packet Length Mean
+   2. Bwd Packet Length Mean
       Feature Value: 174.0000
-      SHAP Impact: -0.6009
-      Effect: ↓ DECREASES attack likelihood by 0.6009
+      SHAP Impact: -1.7292
+      Effect: ↓ DECREASES attack likelihood by 1.7292
 
-   4. Destination Port
-      Feature Value: 53.0000
-      SHAP Impact: +0.4900
-      Effect: ↑ INCREASES attack likelihood by 0.4900
+   3. Average Packet Size
+      Feature Value: 96.3333
+      SHAP Impact: -1.2058
+      Effect: ↓ DECREASES attack likelihood by 1.2058
 
-   5. Bwd IAT Max
-      Feature Value: 3.0000
-      SHAP Impact: -0.4873
-      Effect: ↓ DECREASES attack likelihood by 0.4873
+   4. Min Packet Length
+      Feature Value: 46.0000
+      SHAP Impact: -0.9042
+      Effect: ↓ DECREASES attack likelihood by 0.9042
+
+   5. Fwd IAT Total
+      Feature Value: 27366.0000
+      SHAP Impact: +0.8513
+      Effect: ↑ INCREASES attack likelihood by 0.8513
 
 ================================================================================
 TIER 1 ANALYST RECOMMENDATION:

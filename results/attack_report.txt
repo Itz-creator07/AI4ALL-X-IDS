@@ -3,13 +3,13 @@
 AUTOMATED TIER 1 TRIAGE REPORT - X-IDS
 ================================================================================
 Alert ID: DEMO-ATTACK-001
-Timestamp: 2025-11-01 22:34:15
+Timestamp: 2025-11-08 19:52:48
 ================================================================================
 
 PREDICTION:
    Classification: 🚨 ATTACK DETECTED
-   Risk Score: 99.99%
-   Confidence: 99.99%
+   Risk Score: 100.00%
+   Confidence: 100.00%
    Ground Truth: ATTACK ✅
 
 ================================================================================
@@ -17,28 +17,28 @@ TOP CONTRIBUTING FACTORS (SHAP Analysis):
 
    1. Bwd Packet Length Std
       Feature Value: 5185.4416
-      SHAP Impact: +4.7607
-      Effect: ↑ INCREASES attack likelihood by 4.7607
+      SHAP Impact: +6.7300
+      Effect: ↑ INCREASES attack likelihood by 6.7300
 
-   2. Destination Port
-      Feature Value: 80.0000
-      SHAP Impact: +1.2865
-      Effect: ↑ INCREASES attack likelihood by 1.2865
-
-   3. Bwd Packet Length Min
-      Feature Value: 0.0000
-      SHAP Impact: +1.0755
-      Effect: ↑ INCREASES attack likelihood by 1.0755
-
-   4. FIN Flag Count
+   2. FIN Flag Count
       Feature Value: 1.0000
-      SHAP Impact: +1.0708
-      Effect: ↑ INCREASES attack likelihood by 1.0708
+      SHAP Impact: +1.8760
+      Effect: ↑ INCREASES attack likelihood by 1.8760
 
-   5. Bwd IAT Max
+   3. Destination Port
+      Feature Value: 80.0000
+      SHAP Impact: +1.6714
+      Effect: ↑ INCREASES attack likelihood by 1.6714
+
+   4. Idle Max
       Feature Value: 98300000.0000
-      SHAP Impact: -0.7877
-      Effect: ↓ DECREASES attack likelihood by 0.7877
+      SHAP Impact: +1.4617
+      Effect: ↑ INCREASES attack likelihood by 1.4617
+
+   5. Flow IAT Std
+      Feature Value: 31100000.0000
+      SHAP Impact: +1.4546
+      Effect: ↑ INCREASES attack likelihood by 1.4546
 
 ================================================================================
 TIER 1 ANALYST RECOMMENDATION:
