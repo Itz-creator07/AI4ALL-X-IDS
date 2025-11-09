@@ -1,0 +1,45 @@
+{
+  "project": "X-IDS: Explainable Network Intrusion Detection",
+  "dataset": "CICIDS2017",
+  "model": "XGBoost Binary Classifier",
+  "explainability": "SHAP TreeExplainer",
+  "timestamp": "2025-11-01 22:36:02",
+  "data_summary": {
+    "train_samples": 2262300,
+    "test_samples": 565576,
+    "features": 30,
+    "classes": 2
+  },
+  "model_performance": {
+    "accuracy": 0.9950068602628117,
+    "precision_attack": 0.9804859468700451,
+    "recall_attack": 0.9944210365552372,
+    "f1_attack": 0.9874043282011026,
+    "roc_auc": 0.9997369776888215,
+    "false_positive_rate": 0.004849592198386404,
+    "training_time_seconds": 27.613969564437866
+  },
+  "shap_analysis": {
+    "samples_explained": 1000,
+    "computation_time_seconds": 0.805138349533081,
+    "time_per_sample_ms": 0.805138349533081,
+    "top_feature": "Bwd Packet Length Min",
+    "top_feature_importance_pct": 27.699989318847656,
+    "bias_detected": false
+  },
+  "operational_metrics": {
+    "manual_triage_time_sec": 300,
+    "automated_triage_time_sec": 30.00305609703064,
+    "time_reduction_pct": 89.99898130098978,
+    "target_achieved_90pct": false
+  },
+  "targets_achievement": {
+    "accuracy_95pct": true,
+    "precision_90pct": true,
+    "recall_92pct": true,
+    "f1_91": true,
+    "roc_auc_97": true,
+    "fpr_under_5pct": true,
+    "all_targets_met": true
+  }
+}

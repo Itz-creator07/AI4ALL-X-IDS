@@ -1,0 +1,30 @@
+Bwd Packet Length Std
+Bwd Packet Length Max
+Bwd Packet Length Mean
+Avg Bwd Segment Size
+Packet Length Std
+Max Packet Length
+Packet Length Variance
+Fwd IAT Std
+Packet Length Mean
+Average Packet Size
+Idle Max
+Idle Mean
+Flow IAT Max
+Fwd IAT Max
+Idle Min
+Flow IAT Std
+Min Packet Length
+Bwd Packet Length Min
+Fwd IAT Total
+FIN Flag Count
+PSH Flag Count
+Flow IAT Mean
+Bwd IAT Std
+Fwd IAT Mean
+Destination Port
+URG Flag Count
+Fwd Packet Length Min
+ACK Flag Count
+Bwd IAT Max
+Idle Std

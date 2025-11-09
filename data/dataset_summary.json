@@ -1,0 +1,14 @@
+{
+  "dataset": "CICIDS2017",
+  "total_samples": 2827876,
+  "total_features": 30,
+  "train_samples": 2262300,
+  "test_samples": 565576,
+  "num_classes": 15,
+  "class_balance": {
+    "benign_pct": 80.31893901995703,
+    "attack_pct": 19.68106098004297
+  },
+  "random_seed": 42,
+  "timestamp": "2025-11-01 18:31:30"
+}
