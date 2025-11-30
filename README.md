@@ -28,7 +28,7 @@
 | Name | GitHub Handle | Contribution |
 | ---- | ------------- | ------------ |
 | **Itzalen Lopez** | [@Itz-creator07](https://github.com/Itz-creator07) | Data Preprocessing, Model Development, SHAP Implementation, Project Documentation |
-| **Shahane Frankyan** | N/A | Feature Engineering, Model Training, Hyperparameter Tuning |
+| **Shahane Frankyan** | https://github.com/ShahaneF27 | Feature Engineering, Model Training, Hyperparameter Tuning |
 | **Nethra Shanbhag** | N/A | SHAP Analysis, Case Report Generation, Evaluation Metrics |
 
 **Program:** AI4ALL Explainable AI for Cybersecurity
