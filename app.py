@@ -14,6 +14,7 @@ matplotlib.use("Agg")
 import shap
 import os
 from pathlib import Path
+from typing import List
 
 # ─── Paths ────────────────────────────────────────────────────────────────────
 BASE_DIR = Path(__file__).parent
@@ -65,7 +66,7 @@ def load_model(path: Path):
         return pickle.load(f)
 
 @st.cache_data
-def load_feature_names() -> list[str]:
+def load_feature_names() -> List[str]:
     with open(FEATURE_NAMES_FILE) as f:
         return [line.strip() for line in f if line.strip()]
 
