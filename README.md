@@ -24,21 +24,6 @@
 
 ---
 
-<a id="live-demo"></a>
-## 🚀 Live Demo
-
-**[https://ai4all-x-ids-p8xh2q7c8htcsake6ygukq.streamlit.app](https://ai4all-x-ids-p8xh2q7c8htcsake6ygukq.streamlit.app)**
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai4all-x-ids-p8xh2q7c8htcsake6ygukq.streamlit.app)
-
-**Features:**
-- Single flow prediction with SHAP explanation
-- Batch prediction via CSV upload
-- Automated SOC triage report generation
-- Global explainability visualizations
-
----
-
 <a id="team-members"></a>
 ## 👥 Team Members
 
@@ -421,6 +406,21 @@ Top 5 Contributing Features:
 - 👥 **80% reduction** in required analysts (10 → 2)
 - 💸 **$800K+ annual savings** (assuming $100K/year per analyst)
 - 📊 **95% fewer missed attacks** (false negative rate: 6.9% vs. 30-50% manual)
+
+---
+
+<a id="live-demo"></a>
+## 🚀 Live Demo
+
+**[https://ai4all-x-ids-p8xh2q7c8htcsake6ygukq.streamlit.app](https://ai4all-x-ids-p8xh2q7c8htcsake6ygukq.streamlit.app)**
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai4all-x-ids-p8xh2q7c8htcsake6ygukq.streamlit.app)
+
+**Features:**
+- Single flow prediction with SHAP explanation
+- Batch prediction via CSV upload
+- Automated SOC triage report generation
+- Global explainability visualizations
 
 ---
 
