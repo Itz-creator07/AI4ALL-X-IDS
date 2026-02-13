@@ -11,6 +11,7 @@
 ---
 
 ## Table of Contents
+- [Live Demo](#live-demo)
 - [Team Members](#team-members)
 - [Project Highlights](#project-highlights)
 - [Setup and Execution](#setup-and-execution)
@@ -20,6 +21,21 @@
 - [Impact Narrative](#impact-narrative)
 - [Future Improvements](#future-improvements)
 - [References](#references)
+
+---
+
+<a id="live-demo"></a>
+## 🚀 Live Demo
+
+Try the interactive app here:
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai4all-x-ids-p8xh2q7c8htcsake6ygukq.streamlit.app)
+
+**Features:**
+- Single flow prediction with SHAP explanation
+- Batch prediction via CSV upload
+- Automated SOC triage report generation
+- Global explainability visualizations
 
 ---
 
