@@ -418,7 +418,7 @@ Top 5 Contributing Features:
 
 **Features:**
 - Single flow prediction with SHAP explanation
-- **Load Attack / Load Benign** preset buttons — real samples from the test set for instant demo
+- **Load Attack / Load Benign** preset buttons — real samples from the test set for instant demo → [Try it live](https://ai4all-x-ids-ghtvsekhgeppxj5qdrex7r.streamlit.app)
 - Batch prediction via CSV upload
 - Automated SOC triage report generation
 - Global explainability visualizations
