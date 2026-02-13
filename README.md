@@ -11,13 +11,13 @@
 ---
 
 ## Table of Contents
-- [Live Demo](#live-demo)
 - [Team Members](#team-members)
 - [Project Highlights](#project-highlights)
 - [Setup and Execution](#setup-and-execution)
 - [Data Exploration](#data-exploration)
 - [Model Development](#model-development)
 - [Results](#results)
+- [Live Demo](#live-demo)
 - [Impact Narrative](#impact-narrative)
 - [Future Improvements](#future-improvements)
 - [References](#references)
