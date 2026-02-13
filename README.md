@@ -6,6 +6,7 @@
 ![XGBoost](https://img.shields.io/badge/XGBoost-Latest-brightgreen)
 ![SHAP](https://img.shields.io/badge/SHAP-Explainability-orange)
 ![Status](https://img.shields.io/badge/Status-Complete-success)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://x-ids-demo.streamlit.app)
 
 ---
 
