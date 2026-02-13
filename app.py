@@ -25,6 +25,43 @@ MODELS = {
 FEATURE_NAMES_FILE = BASE_DIR / "data" / "feature_names.txt"
 RESULTS_DIR = BASE_DIR / "results"
 
+# ─── Real samples from test set (for demo presets) ────────────────────────────
+PRESET_ATTACK = {
+    "Bwd Packet Length Std": 5185.4416, "Bwd Packet Length Max": 11595.0,
+    "Bwd Packet Length Mean": 2319.0, "Avg Bwd Segment Size": 2319.0,
+    "Packet Length Std": 3338.8877, "Max Packet Length": 11595.0,
+    "Packet Length Variance": 11100000.0, "Fwd IAT Std": 44000000.0,
+    "Packet Length Mean": 997.3333, "Average Packet Size": 1088.0,
+    "Idle Max": 98300000.0, "Idle Mean": 98300000.0,
+    "Flow IAT Max": 98300000.0, "Fwd IAT Max": 98300000.0,
+    "Idle Min": 98300000.0, "Flow IAT Std": 31100000.0,
+    "Min Packet Length": 0.0, "Bwd Packet Length Min": 0.0,
+    "Fwd IAT Total": 98300000.0, "FIN Flag Count": 1.0,
+    "PSH Flag Count": 0.0, "Flow IAT Mean": 9830301.7,
+    "Bwd IAT Std": 49100000.0, "Fwd IAT Mean": 19700000.0,
+    "Destination Port": 80.0, "URG Flag Count": 0.0,
+    "Fwd Packet Length Min": 0.0, "ACK Flag Count": 0.0,
+    "Bwd IAT Max": 98300000.0, "Idle Std": 0.0,
+}
+
+PRESET_BENIGN = {
+    "Bwd Packet Length Std": 0.0, "Bwd Packet Length Max": 174.0,
+    "Bwd Packet Length Mean": 174.0, "Avg Bwd Segment Size": 174.0,
+    "Packet Length Std": 62.4576, "Max Packet Length": 174.0,
+    "Packet Length Variance": 3900.9524, "Fwd IAT Std": 15793.7053,
+    "Packet Length Mean": 82.5714, "Average Packet Size": 96.3333,
+    "Idle Max": 0.0, "Idle Mean": 0.0,
+    "Flow IAT Max": 27359.0, "Fwd IAT Max": 27359.0,
+    "Idle Min": 0.0, "Flow IAT Std": 11940.0119,
+    "Min Packet Length": 46.0, "Bwd Packet Length Min": 174.0,
+    "Fwd IAT Total": 27366.0, "FIN Flag Count": 0.0,
+    "PSH Flag Count": 0.0, "Flow IAT Mean": 6171.2,
+    "Bwd IAT Std": 0.0, "Fwd IAT Mean": 9122.0,
+    "Destination Port": 53.0, "URG Flag Count": 0.0,
+    "Fwd Packet Length Min": 46.0, "ACK Flag Count": 0.0,
+    "Bwd IAT Max": 3.0, "Idle Std": 0.0,
+}
+
 # ─── Feature defaults (median-like values for demo sliders) ───────────────────
 FEATURE_DEFAULTS = {
     "Bwd Packet Length Std":  20.0,
@@ -199,13 +236,23 @@ elif page == "Single Prediction":
     st.title("Single Flow Prediction")
     st.caption("Enter 30 network flow features to classify one connection and get a SHAP explanation.")
 
+    # ── Presets
+    st.caption("Load a real sample from the test set:")
+    col_pre1, col_pre2, col_pre3 = st.columns([1, 1, 4])
+    if col_pre1.button("Load Attack Sample", type="secondary"):
+        for fname, val in PRESET_ATTACK.items():
+            st.session_state[fname] = float(val)
+    if col_pre2.button("Load Benign Sample", type="secondary"):
+        for fname, val in PRESET_BENIGN.items():
+            st.session_state[fname] = float(val)
+
     with st.form("prediction_form"):
         cols = st.columns(3)
         input_values = {}
         for idx, fname in enumerate(feature_names):
-            default = FEATURE_DEFAULTS.get(fname, 0.0)
+            default = float(st.session_state.get(fname, FEATURE_DEFAULTS.get(fname, 0.0)))
             input_values[fname] = cols[idx % 3].number_input(
-                fname, value=float(default), format="%.4f", key=fname
+                fname, value=default, format="%.4f", key=fname
             )
         submitted = st.form_submit_button("Predict & Explain", type="primary")
 
