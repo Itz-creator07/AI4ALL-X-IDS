@@ -418,6 +418,7 @@ Top 5 Contributing Features:
 
 **Features:**
 - Single flow prediction with SHAP explanation
+- **Load Attack / Load Benign** preset buttons — real samples from the test set for instant demo
 - Batch prediction via CSV upload
 - Automated SOC triage report generation
 - Global explainability visualizations
