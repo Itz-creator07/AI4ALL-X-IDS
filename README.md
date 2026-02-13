@@ -27,7 +27,7 @@
 <a id="live-demo"></a>
 ## 🚀 Live Demo
 
-Try the interactive app here:
+**[https://ai4all-x-ids-p8xh2q7c8htcsake6ygukq.streamlit.app](https://ai4all-x-ids-p8xh2q7c8htcsake6ygukq.streamlit.app)**
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai4all-x-ids-p8xh2q7c8htcsake6ygukq.streamlit.app)
 
